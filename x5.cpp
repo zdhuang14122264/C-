@@ -4,7 +4,7 @@ using namespace std;
 #define M(y) y*y+3*y
 int main(int argc,char **argv)  //char*argv[]
 {
-	auto int i=8,k;				//auto可以省略 
+	int i=8,k;				//auto可以省略 
 	static int j=9;				//static静态参量 
 	k=M(5);
 	cout<<setw(10)<<left<<++i<<--i<<"\n";	
@@ -14,7 +14,7 @@ int main(int argc,char **argv)  //char*argv[]
 	cout<<setprecision(3)<<2.71828<<endl;
 	cout<<1.412<<endl;
 	//setprecision函数控制输出数字的位数，而且适当的输出（四舍五入），对于输出格式化的数据，还是建议使用printf
-	cout<<"ox"<<setbase(16)<<32<<endl;
-	//届时32将输出其16进制的数字
+	cout<<"ox"<<hex<<32<<oct<<8<<dec<<10<<endl;
+	//分别对应16进制，8进制，10进制
 	return 0;
 }
